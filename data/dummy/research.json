@@ -1,0 +1,138 @@
+[
+  {
+    "id": "RES-001",
+    "title": "GPS Telemetry and Seasonal Movement Patterns of Sri Lankan Elephants in the North-Central Province",
+    "authors": ["Fernando, P.", "Wickramasinghe, S.", "de Silva, M."],
+    "year": 2021,
+    "journal": "Oryx — The International Journal of Conservation",
+    "doi": "10.1017/S0030605321000XX",
+    "key_findings": [
+      "GPS-collared elephants in Anuradhapura and Polonnaruwa moved an average of 12–18 km per day during the dry season",
+      "80% of human-elephant encounters occurred within 5 km of forest-agriculture boundaries",
+      "Elephant movement into agricultural areas peaked between 9 PM and 3 AM",
+      "Seasonal drought reduced within-park food availability by 35%, directly correlating with a 47% increase in boundary violations",
+      "Three primary movement corridors identified linking Wilpattu, Madhu, and Anuradhapura protected areas"
+    ],
+    "districts_covered": ["Anuradhapura", "Polonnaruwa"],
+    "abstract": "This study tracked 18 GPS-collared elephants in Sri Lanka's North-Central Province over a 36-month period, revealing strong seasonal patterns in movement behaviour linked to rainfall, food availability, and conflict incidence. Dry-season dispersal brought elephants into frequent contact with cultivation areas, with the majority of agricultural damage occurring in a narrow time window after midnight. Identified wildlife corridors provide a basis for strategic fence placement and land-use planning."
+  },
+  {
+    "id": "RES-002",
+    "title": "Effectiveness of Electric Fencing in Reducing Human-Elephant Conflict: Evidence from Sri Lanka's Southern Province",
+    "authors": ["Perera, B.M.A.O.", "Jayasinghe, C."],
+    "year": 2022,
+    "journal": "Journal of Applied Ecology",
+    "doi": "10.1111/1365-2664.14XXX",
+    "key_findings": [
+      "Properly maintained electric fences reduced crop raid frequency by 78% in monitored villages",
+      "Fence effectiveness dropped to below 40% when maintenance intervals exceeded six months",
+      "Solar-powered units showed 23% better uptime than grid-connected units in remote areas",
+      "Community ownership of maintenance responsibility increased fence longevity by an average of 2.3 years",
+      "Cost-benefit ratio of electric fencing was positive across all six study sites when crop savings were accounted for over five years"
+    ],
+    "districts_covered": ["Hambantota", "Ratnapura", "Monaragala"],
+    "abstract": "A longitudinal study of electric fence performance across six villages in southern Sri Lanka demonstrated that properly maintained perimeter fences substantially reduce HEC incidence. The primary driver of failure was deferred maintenance rather than design. Community-managed maintenance schemes proved significantly more effective than government-led models. Economic analysis confirmed a positive return on fence investment within three years in high-incidence zones."
+  },
+  {
+    "id": "RES-003",
+    "title": "Economic Impact Assessment of Human-Elephant Conflict on Smallholder Farming Communities in Polonnaruwa District",
+    "authors": ["Karunaratne, D.", "Nissanka, S.P.", "Weerasinghe, T."],
+    "year": 2020,
+    "journal": "Tropical Agricultural Research",
+    "doi": "10.4038/tar.v32iX.XXXX",
+    "key_findings": [
+      "Average annual crop loss per affected household in Polonnaruwa was LKR 87,400 (2019 prices)",
+      "HEC-affected households had 31% lower agricultural income compared to unaffected neighbours",
+      "35% of surveyed farmers reported reducing cultivation area due to fear of elephant raids",
+      "Night-guard systems represented an additional labour burden of 1,200 hours per year per household",
+      "Government compensation schemes covered an average of only 23% of actual losses"
+    ],
+    "districts_covered": ["Polonnaruwa"],
+    "abstract": "This study quantified the economic burden of HEC on smallholder farmers in Polonnaruwa using household surveys and crop loss assessments across 340 farming families. Beyond direct crop losses, indirect costs including labour for guarding, psychological stress, and reduced cultivation intensiveness were substantial. Current government compensation mechanisms were found to be deeply insufficient, and non-uptake due to complex bureaucratic processes was widespread."
+  },
+  {
+    "id": "RES-004",
+    "title": "Beehive Fences as a Non-Lethal Elephant Deterrent: Pilot Results from Ampara and Hambantota",
+    "authors": ["Ratnayake, H.U.", "Jayawardena, P.", "Pastorini, J."],
+    "year": 2023,
+    "journal": "Frontiers in Conservation Science",
+    "doi": "10.3389/fcosc.2023.XXXXXX",
+    "key_findings": [
+      "Beehive fence deterrence rate reached 62% in field trials — elephants turned back when bees were disturbed",
+      "Zero elephant injuries or deaths recorded at beehive fence sites over 18 months",
+      "Honey production provided an additional income stream of LKR 32,000 per km of fence per year",
+      "Community acceptance was high: 89% of participating farmers preferred beehive fences over chili barriers",
+      "Limitations noted in heavy rainfall conditions where bees do not emerge and deterrence effectiveness fell to 18%"
+    ],
+    "districts_covered": ["Ampara", "Hambantota"],
+    "abstract": "Beehive fences, which exploit the documented aversion of elephants to African honeybees, were tested at eight village sites across Ampara and Hambantota districts. The system demonstrated meaningful deterrence rates in dry and moderate weather conditions and simultaneously generated honey income for participating families. The dual economic-conservation benefit and low maintenance cost make this an attractive option for communities unable to access electric fencing infrastructure."
+  },
+  {
+    "id": "RES-005",
+    "title": "Retaliatory Killings of Asian Elephants in Sri Lanka: Scale, Methods, and Policy Response",
+    "authors": ["Seneviratne, A.", "Fernando, P."],
+    "year": 2022,
+    "journal": "Conservation Biology",
+    "doi": "10.1111/cobi.13XXX",
+    "key_findings": [
+      "An estimated 50–70 elephants are killed annually through retaliatory or incidental means in Sri Lanka",
+      "Hakkapatas (explosive-concealed food) account for approximately 30% of non-natural elephant deaths",
+      "Illegal electrocution traps caused 28% of documented retaliatory deaths",
+      "Poisoning represented 18% of cases, primarily in plantation areas",
+      "Reported cases represent an estimated 35–45% of actual retaliatory deaths due to under-reporting"
+    ],
+    "districts_covered": ["Anuradhapura", "Ampara", "Monaragala", "Polonnaruwa"],
+    "abstract": "This paper synthesises DWC records, post-mortem data, and field investigation reports to estimate the scale of human-caused elephant mortality in Sri Lanka outside of direct conflict encounters. Retaliatory killings, largely driven by crop protection motivations, represent a critical and underestimated threat to Sri Lanka's elephant population. Current enforcement capacity is insufficient, and the study calls for community incentive programmes to reduce reliance on lethal deterrents."
+  },
+  {
+    "id": "RES-006",
+    "title": "Community-Based HEC Mitigation: Participatory Design of Early Warning Systems in Rural Sri Lanka",
+    "authors": ["Dharmaratne, G.", "Moonasinghe, K.", "Silva, A."],
+    "year": 2021,
+    "journal": "Human Dimensions of Wildlife",
+    "doi": "10.1080/10871209.2021.XXXXXX",
+    "key_findings": [
+      "SMS-based elephant proximity alerts reduced human-elephant encounter injuries by 41% in pilot villages",
+      "Communities that co-designed warning systems showed 3× higher adoption rates versus top-down installations",
+      "Average time from elephant detection to community alert was reduced from 45 minutes to under 6 minutes with digital systems",
+      "Acoustic deterrents (sirens + recordings of bee swarms) combined with SMS alerts achieved 68% turn-back rate",
+      "Women farmers were disproportionately exposed to HEC risk during morning agricultural work, a finding not previously documented"
+    ],
+    "districts_covered": ["Anuradhapura", "Kurunegala", "Trincomalee"],
+    "abstract": "This action research study engaged farming communities in three Sri Lankan districts in co-designing and deploying low-cost HEC early warning systems. Mobile-linked sensor networks, community watch structures, and participatory training programmes were combined into integrated solutions. Results demonstrated that system ownership and design participation were stronger predictors of adoption success than technical sophistication."
+  },
+  {
+    "id": "RES-007",
+    "title": "Climate Change and Human-Elephant Conflict: Projected Intensification Under 1.5°C and 2°C Warming Scenarios",
+    "authors": ["Wijesinghe, M.R.", "Perera, N.", "Bandara, R."],
+    "year": 2023,
+    "journal": "Global Environmental Change",
+    "doi": "10.1016/j.gloenvcha.2023.XXXXXX",
+    "key_findings": [
+      "Under a 1.5°C warming scenario, HEC incidents in Sri Lanka's dry zone are projected to increase 22–31% by 2050",
+      "Drought frequency in the North-Central Province is modelled to increase by 1.8 dry-season months per decade",
+      "Elephant range contraction due to habitat degradation is expected to increase overlap with human settlements by 18%",
+      "Conflict hotspot mapping identifies Anuradhapura, Polonnaruwa, and Monaragala as highest-risk districts under all warming scenarios",
+      "Investment in corridor preservation was identified as the highest-impact long-term mitigation measure"
+    ],
+    "districts_covered": ["Anuradhapura", "Polonnaruwa", "Monaragala", "Hambantota"],
+    "abstract": "Using CMIP6 climate projections and species distribution modelling, this study forecasts how changing rainfall patterns and temperature increases will reshape human-elephant conflict dynamics in Sri Lanka through 2100. Prolonged dry seasons are predicted to increase elephant dispersal into agricultural areas more frequently, while habitat loss compounds pressure on movement corridors. The findings underscore the need for climate-adaptive conservation strategies."
+  },
+  {
+    "id": "RES-008",
+    "title": "Policy Analysis: Sri Lanka's Human-Elephant Conflict Management Framework — Gaps, Progress, and Recommendations",
+    "authors": ["Jayasuriya, N.", "Cooray, P.L."],
+    "year": 2024,
+    "journal": "Journal of International Wildlife Law and Policy",
+    "doi": "10.1080/13880292.2024.XXXXXX",
+    "key_findings": [
+      "Sri Lanka lacks a national HEC management strategy despite elephants being legally protected under the FFPO since 1937",
+      "DWC budget allocation for HEC mitigation has declined by 18% in real terms over the past decade",
+      "District-level HEC data is collected inconsistently across provinces with no centralised national registry",
+      "Insurance scheme uptake for crop losses remained below 12% nationally due to complex claims processes",
+      "Translocations of problem elephants have not reduced long-term conflict rates at source locations in any documented case"
+    ],
+    "districts_covered": ["All Districts"],
+    "abstract": "This policy review analysed Sri Lanka's legal, institutional, and programmatic frameworks for managing human-elephant conflict against documented outcomes over a 15-year period. Despite formal protective legislation and multiple mitigation programmes, conflict rates have continued to increase. The analysis identifies systemic gaps in funding, data management, community engagement, and inter-agency coordination, and proposes specific reforms for a national HEC management strategy."
+  }
+]

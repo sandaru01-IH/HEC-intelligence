@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEC Intelligence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- ══ SIDEBAR ══════════════════════════════════════════ -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+      <div class="brand">
+        <span class="brand-dot" id="brandDot"></span>
+        <span class="brand-name">HEC Intelligence</span>
+      </div>
+      <button class="icon-btn" id="sidebarClose" title="Close sidebar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <button class="new-chat-btn" id="newChatBtn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      New Chat
+    </button>
+
+    <div class="sidebar-section-label">Recent</div>
+    <div class="past-chats" id="pastChats">
+      <p class="no-chats">No conversations yet.</p>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="model-picker" id="modelPicker">
+        <span class="footer-label">Model</span>
+        <button class="model-btn" id="modelBtn">
+          <span id="modelBtnText">—</span>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="model-dropdown" id="modelDropdown">
+          <!-- populated by JS -->
+        </div>
+      </div>
+
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- ══ SOURCES PANEL ═══════════════════════════════════ -->
+  <aside class="sources-panel" id="sourcesPanel">
+    <div class="sp-header">
+      <div class="sp-title-row">
+        <span class="sp-title">Sources</span>
+        <span class="sp-count" id="spCount"></span>
+      </div>
+      <button class="icon-btn" id="spClose" title="Close">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="sp-context" id="spContext"></div>
+    <div class="sp-list" id="spList"></div>
+  </aside>
+
+  <!-- ══ MAIN ═════════════════════════════════════════════ -->
+  <div class="main" id="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <button class="icon-btn" id="sidebarOpen" title="Open sidebar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <span class="topbar-title" id="topbarTitle">HEC Intelligence</span>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="filterToggle" title="Toggle filters">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          <span class="filter-dot" id="filterDot" style="display:none"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Filter panel -->
+    <div class="filter-panel" id="filterPanel">
+      <div class="filter-row">
+        <div class="filter-item">
+          <label class="filter-lbl">District</label>
+          <select class="filter-sel" id="filterDistrict">
+            <option value="">All districts</option>
+          </select>
+        </div>
+        <div class="filter-item">
+          <label class="filter-lbl">Year</label>
+          <select class="filter-sel" id="filterYear">
+            <option value="">All years</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+        <div class="filter-item">
+          <label class="filter-lbl">Document type</label>
+          <select class="filter-sel" id="filterType">
+            <option value="">All types</option>
+            <option value="incident">Incidents</option>
+            <option value="research">Research</option>
+            <option value="prevention">Prevention</option>
+            <option value="uploaded_pdf">Uploaded PDFs</option>
+          </select>
+        </div>
+        <button class="clear-btn" id="clearFilters">Clear</button>
+      </div>
+    </div>
+
+    <!-- Conversation area -->
+    <div class="conversation" id="conversation">
+
+      <!-- Welcome screen -->
+      <div class="welcome" id="welcome">
+        <div class="welcome-inner">
+          <div class="welcome-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h1 class="welcome-title">Human-Elephant Conflict Intelligence</h1>
+          <p class="welcome-sub">Incident records · Research findings · Prevention strategies · Sri Lanka</p>
+
+          <div class="stat-row" id="statRow">
+            <div class="stat-card">
+              <div class="stat-val" id="statDeaths">—</div>
+              <div class="stat-lbl">Human deaths</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val" id="statInjuries">—</div>
+              <div class="stat-lbl">Human injuries</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val" id="statElephants">—</div>
+              <div class="stat-lbl">Elephant deaths</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val" id="statIncidents">—</div>
+              <div class="stat-lbl">Incidents indexed</div>
+            </div>
+          </div>
+
+          <div class="districts-block" id="districtsBlock">
+            <div class="districts-label">Top affected districts</div>
+            <div class="district-bars" id="districtBars">
+              <div class="skeleton-bar"></div>
+              <div class="skeleton-bar short"></div>
+              <div class="skeleton-bar"></div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <p class="suggestions-label">Suggested queries</p>
+          <div class="chips" id="chips">
+            <button class="chip" data-q="Which districts in Sri Lanka have the highest number of HEC incidents?">Top conflict districts</button>
+            <button class="chip" data-q="What incidents were recorded near Minneriya National Park?">Minneriya incidents</button>
+            <button class="chip" data-q="What are the most effective elephant deterrent and prevention methods?">Prevention methods</button>
+            <button class="chip" data-q="How many human fatalities have been caused by elephant attacks?">Human fatality data</button>
+            <button class="chip" data-q="What does research say about electric fence effectiveness for HEC?">Electric fence research</button>
+            <button class="chip" data-q="What is the economic impact of crop raids on farming communities?">Economic impact</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /conversation -->
+
+    <!-- Uploaded files bar -->
+    <div class="uploads-bar" id="uploadsBar"></div>
+
+    <!-- Input area -->
+    <div class="input-area">
+      <div class="input-box" id="inputBox">
+        <button class="attach-btn" id="attachBtn" title="Upload PDF for context">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+        </button>
+        <textarea
+          id="queryInput"
+          class="query-input"
+          placeholder="Ask anything about HEC in Sri Lanka…"
+          rows="1"
+          maxlength="1500"
+        ></textarea>
+        <button class="send-btn" id="sendBtn" disabled title="Send">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <input type="file" id="fileInput" accept=".pdf" multiple style="display:none" />
+      <div class="input-footer">
+        <span class="input-hint"><kbd>Enter</kbd> send &nbsp;·&nbsp; <kbd>Shift+Enter</kbd> new line</span>
+        <span class="filter-badge" id="filterBadge"></span>
+      </div>
+    </div>
+
+  </div><!-- /main -->
+
+</div><!-- /app -->
+
+<script src="app.js"></script>
+</body>
+</html>

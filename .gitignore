@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+env/
+.env
+
+# Vector DB (runtime-generated, not committed)
+data/qdrant_db/
+
+# Knowledge base manifests & user-uploaded PDFs
+data/knowledge_base/*.pdf
+data/knowledge_base/.manifest.json
+
+# Raw data (empty folder, tracked via .gitkeep)
+data/raw/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Misc
+*.tmp
+*.bak
